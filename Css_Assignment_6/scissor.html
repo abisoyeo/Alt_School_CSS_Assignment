@@ -15,386 +15,10 @@
       href="https://db.onlinewebfonts.com/c/000833a3a58fb083c44b9de42c2ff0a2?family=Gilroy-SemiBold"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./style.css" />
     <title>Scissor</title>
   </head>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    /* body {
-      /* width: 80%;
-      margin: auto; 
-    } */
-    .navbar {
-      width: 80%;
-      margin: auto;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 20px;
-      flex-wrap: wrap;
-    }
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background: transparent;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-    }
 
-    li {
-      padding: 5px 15px;
-      background: transparent;
-    }
-
-    li a {
-      display: block;
-      color: #141414;
-      font-size: 14px;
-      font-weight: 700;
-      text-decoration: none;
-      background: transparent;
-      padding: 8px;
-    }
-
-    .blue-button {
-      border-radius: 100px;
-      background: #0065fe;
-      padding: 12px 30px;
-      color: #fff;
-    }
-
-    .navitems {
-      font-family: "Gilroy-Medium";
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 100px;
-    }
-
-    .navitems select {
-      font-size: 14px;
-      font-weight: 700;
-      text-decoration: none;
-      background: transparent;
-      padding: 8px;
-      border: none;
-      outline: none;
-      cursor: pointer;
-    }
-
-    .url-span {
-      color: #0065fe;
-      position: relative;
-      font-family: "Gilroy-Bold";
-    }
-
-    .url-span::after {
-      content: url(./assets/Vector\ 3.png);
-      position: absolute;
-      top: 53%;
-      left: 3ex;
-      width: 173.63px;
-      height: 19.91px;
-    }
-
-    .hero-section {
-      width: 80%;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 5px;
-    }
-
-    .hero-section h1 {
-      font-family: "Gilroy-Bold";
-      padding: 30px;
-      font-size: 48px;
-      text-align: center;
-    }
-    .hero-section p {
-      font-family: "Gilroy-Medium";
-      padding: 7px 140px;
-      font-size: 18px;
-      text-align: center;
-      max-width: 85%;
-      margin: auto;
-    }
-
-    .hero-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      align-items: center;
-      margin: 20px;
-    }
-    .hero-buttons a {
-      display: block;
-      font-size: 14px;
-      font-weight: 700;
-      text-decoration: none;
-      padding: 11px 45px;
-    }
-    .hero-footer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .desktop-10 span {
-      color: #0065fe;
-    }
-
-    .desktop-10 h1 {
-      font-family: "Gilroy-Bold";
-      font-size: 40px;
-    }
-
-    .desktop-10 h2 {
-      font-family: "Gilroy-SemiBold";
-      font-size: 32px;
-    }
-
-    .desktop-10 p {
-      font-family: "Gilroy-Medium";
-      font-size: 16px;
-    }
-
-    .desktop-10-header {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      background: #f9fbfd;
-      padding: 40px 155px;
-    }
-
-    .desktop-10-header-info {
-      display: flex;
-      gap: 25px;
-    }
-
-    .desktop-10-body {
-      width: 80%;
-      margin: auto;
-      display: flex;
-      flex-direction: row;
-      gap: 55px;
-      margin-top: 100px;
-    }
-
-    .desktop-10-body-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-column-gap: 25px;
-      grid-row-gap: 20px;
-    }
-
-    .info-group {
-      padding: 10px;
-      display: flex;
-      gap: 10px;
-      flex-direction: column;
-    }
-
-    .info-group img {
-      max-width: 56px;
-    }
-
-    .desktop-11 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 150px 0px;
-      gap: 45px;
-    }
-    .desktop-11 span {
-      color: #0065fe;
-    }
-
-    .desktop-11 h1 {
-      font-family: "Gilroy-Bold";
-      font-size: 40px;
-    }
-
-    .desktop-11 h2 {
-      font-family: "Gilroy-SemiBold";
-      font-size: 32px;
-    }
-
-    .desktop-11 p {
-      font-family: "Gilroy-Medium";
-      font-size: 16px;
-    }
-
-    .desktop-11-buttons {
-      display: flex;
-      gap: 20px;
-    }
-    .desktop-11-buttons a {
-      display: block;
-      font-size: 14px;
-      font-weight: 700;
-      text-decoration: none;
-      padding: 8px;
-      border-radius: 100px;
-      padding: 12px 30px;
-    }
-
-    .desktop-12 {
-      min-height: 525px;
-      background: linear-gradient(
-        180deg,
-        #1e3448 99.99%,
-        rgba(30, 52, 72, 0) 100%
-      );
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .desktop-12 svg {
-      position: absolute;
-      pointer-events: none;
-    }
-
-    .desktop-12 svg:first-child {
-      left: 0;
-      top: 0;
-    }
-
-    .desktop-12 svg:last-child {
-      right: 0;
-      top: 0;
-    }
-
-    .desktop-12-form {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-column-gap: 24px;
-      grid-row-gap: 20px;
-      background: white;
-      border-radius: 12px;
-      padding: 60px 40px;
-      width: 100%;
-      max-width: 476px;
-      position: relative;
-      z-index: 1;
-      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    .desktop-12-form #paste-url,
-    .desktop-12-form p,
-    .desktop-12-form input[type="button"] {
-      grid-column: 1 / -1;
-    }
-
-    .desktop-12-form input,
-    .desktop-12-form select {
-      padding: 12px 16px;
-      border: 1px solid #e2e8f0;
-      border-radius: 8px;
-      font-size: 16px;
-      width: 100%;
-    }
-
-    .desktop-12-form input::placeholder {
-      font-family: "Gilroy-Medium";
-      color: #3284ff;
-      font-size: 12px;
-    }
-
-    .desktop-12-form select {
-      appearance: none;
-      background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%233284FF' stroke-width='2'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: right 16px center;
-      color: #3284ff;
-      font-size: 12px;
-    }
-
-    .desktop-12-form input[type="button"] {
-      background: #0065fe;
-      color: white;
-      border: none;
-      padding: 16px;
-      font-weight: 500;
-      cursor: pointer;
-      transition: background-color 0.2s;
-      border-radius: 40px;
-    }
-
-    .desktop-12-form input[type="button"]:hover {
-      background: #0052cc;
-      font-family: "Gilroy-SemiBold";
-    }
-
-    /* New button container styles */
-    .button-container {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      grid-column: 1 / -1;
-    }
-
-    .button-container input[type="button"] {
-      background: #0065fe;
-      color: white;
-      border: none;
-      padding: 16px;
-      font-weight: 500;
-      cursor: pointer;
-      transition: background-color 0.2s;
-    }
-
-    .button-container input[type="button"]:hover {
-      background: #0052cc;
-    }
-
-    /* Position the icon span */
-    .button-container span {
-      position: absolute;
-      right: 140px;
-      top: 50%;
-      transform: translateY(-50%);
-      pointer-events: none;
-    }
-
-    .button-container img {
-      width: 20px;
-      height: 20px;
-      vertical-align: middle;
-    }
-
-    .desktop-12-form p {
-      color: #3284ff;
-      font-size: 12px;
-      text-align: left;
-      margin: 0;
-      padding-right: 45px;
-      font-family: "Gilroy-Medium";
-    }
-
-    .desktop-12-form p a {
-      color: #0065fe;
-      text-decoration: none;
-    }
-
-    .desktop-12-form p a:hover {
-      text-decoration: underline;
-    }
-  </style>
   <body>
     <nav>
       <div class="navbar">
@@ -706,5 +330,589 @@
         </defs>
       </svg>
     </div>
+
+    <div class="faq-container">
+      <svg
+        width="350"
+        height="860"
+        viewBox="0 0 350 860"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g opacity="0.8">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M-81.7899 -40.0418C-34.25 -31.0674 62.214 45.6115 98.9723 87.4865C133.132 126.401 146.346 146.375 159.649 203.471C172.408 258.235 159.321 344.28 156.062 401.142C151.886 474.013 190.414 576.912 144.342 615.42C96.9481 655.032 38.1705 583.275 -16.4212 563.7C-52.7113 550.688 -87.2397 540.994 -121.494 520.1C-164.116 494.102 -223.481 485.983 -239.919 427.375C-256.333 368.849 -202.849 317.576 -195.468 256.348C-186.384 180.988 -230.488 88.6975 -192.316 32.4982C-155.347 -21.9293 -136.792 -50.4248 -81.7899 -40.0418Z"
+            fill="url(#paint0_linear_1_430)"
+            fill-opacity="0.3"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M-98.2132 72.0822C-56.1038 72.1661 -14.4496 84.4072 21.2936 114.953C54.5106 143.34 76.4616 188.03 93.2194 235.678C109.293 281.379 94.576 321.602 96.9275 371.743C99.9403 436.002 145.318 527.069 108.811 568.173C71.2553 610.458 13.6644 557.428 -35.5363 549.245C-68.2419 543.804 -99.1163 540.973 -130.772 528.325C-170.161 512.588 -222.464 515.176 -242.081 466.721C-261.672 418.333 -219.89 364.883 -219.059 310.259C-218.036 243.029 -264.754 169.693 -236.72 114.44C-209.57 60.9296 -146.933 71.9854 -98.2132 72.0822Z"
+            fill="url(#paint1_linear_1_430)"
+            fill-opacity="0.4"
+          />
+          <path
+            opacity="0.4"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M-88.6289 170.849C-49.6353 185.12 -13.3557 210.402 13.997 250.5C39.4159 287.763 51.3256 336.202 57.867 385.604C64.1407 432.987 57.6883 478.694 50.4137 525.531C41.0901 585.554 51.1947 670.74 9.62603 696.178C-33.1347 722.346 -76.4887 654.238 -120.523 630.137C-149.795 614.117 -177.862 601.11 -204.803 578.825C-238.325 551.095 -287.264 535.843 -296.302 484.735C-305.328 433.697 -256.547 398.701 -245.479 348.822C-231.856 287.432 -261.309 204.342 -224.922 163.054C-189.683 123.07 -133.743 154.336 -88.6289 170.849Z"
+            fill="url(#paint2_linear_1_430)"
+            fill-opacity="0.6"
+          />
+        </g>
+        <defs>
+          <linearGradient
+            id="paint0_linear_1_430"
+            x1="-180.687"
+            y1="534.041"
+            x2="64.3511"
+            y2="101.829"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#9EE6F7" stop-opacity="0" />
+            <stop offset="1" stop-color="#9EE6F7" stop-opacity="0.46" />
+          </linearGradient>
+          <linearGradient
+            id="paint1_linear_1_430"
+            x1="-191.283"
+            y1="546.344"
+            x2="-38.3052"
+            y2="121.941"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#9EE6F7" stop-opacity="0" />
+            <stop offset="1" stop-color="#9EE6F7" stop-opacity="0.46" />
+          </linearGradient>
+          <linearGradient
+            id="paint2_linear_1_430"
+            x1="-264.255"
+            y1="574.973"
+            x2="-16.7186"
+            y2="256.916"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#005AE2" />
+            <stop offset="1" stop-color="#73E6FF" stop-opacity="0.38" />
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <h1 class="faq-title">FAQs</h1>
+      <div class="faq-item">
+        <input type="checkbox" id="faq1" />
+        <label class="faq-question" for="faq1">
+          How does URL shortening work?
+        </label>
+        <div class="faq-answer">
+          URL shortening works by taking a long URL and creating a shorter,
+          condensed version that redirects to the original URL. When a user
+          clicks on the shortened link, they are redirected to the intended
+          destination.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <input type="checkbox" id="faq2" />
+        <label class="faq-question" for="faq2">
+          Is it necessary to create an account to use the URL shortening
+          service?
+        </label>
+        <div class="faq-answer">Account creation details would go here.</div>
+      </div>
+
+      <div class="faq-item">
+        <input type="checkbox" id="faq3" />
+        <label class="faq-question" for="faq3">
+          Are the shortened links permanent? Will they expire?
+        </label>
+        <div class="faq-answer">Link expiration details would go here.</div>
+      </div>
+
+      <div class="faq-item">
+        <input type="checkbox" id="faq4" />
+        <label class="faq-question" for="faq4">
+          Are there any limitations on the number of URLs I can shorten?
+        </label>
+        <div class="faq-answer">URL limitation details would go here.</div>
+      </div>
+
+      <div class="faq-item">
+        <input type="checkbox" id="faq5" />
+        <label class="faq-question" for="faq5">
+          Can I customize the shortened URLs to reflect my brand or content?
+        </label>
+        <div class="faq-answer">Customization details would go here.</div>
+      </div>
+
+      <div class="faq-item">
+        <input type="checkbox" id="faq6" />
+        <label class="faq-question" for="faq6">
+          Can I track the performance of my shortened URLs?
+        </label>
+        <div class="faq-answer">Tracking details would go here.</div>
+      </div>
+
+      <div class="faq-item">
+        <input type="checkbox" id="faq7" />
+        <label class="faq-question" for="faq7">
+          How secure is the URL shortening service? Are the shortened links
+          protected against spam or malicious activity?
+        </label>
+        <div class="faq-answer">Security details would go here.</div>
+      </div>
+      <svg
+        width="374"
+        height="439"
+        viewBox="0 0 374 439"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g opacity="0.7">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M74.416 555.548C59.9172 509.393 82.0604 388.171 101.659 336.012C119.872 287.54 131.258 266.471 175.338 227.82C217.618 190.749 299.67 161.723 351.352 137.789C417.585 107.116 490.166 24.626 545.847 47.1014C603.125 70.2215 567.554 155.888 576.029 213.26C581.663 251.398 589.393 286.419 587.117 326.478C584.284 376.323 605.112 432.504 561.176 474.631C517.302 516.7 446.87 493.706 389.393 516.063C318.651 543.581 258.055 625.988 190.497 618.82C125.068 611.878 91.191 608.95 74.416 555.548Z"
+            fill="url(#paint0_linear_1_434)"
+            fill-opacity="0.3"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M181.04 517.17C161.261 479.995 152.418 437.489 162.504 391.566C171.877 348.889 200.94 308.461 235.06 271.219C267.785 235.497 310.195 229.513 353.306 203.799C408.554 170.847 467.471 87.8941 520.932 100.71C575.928 113.895 556.313 189.685 572.293 236.932C582.915 268.34 594.974 296.903 598.745 330.783C603.436 372.939 630.378 417.843 596.895 457.988C563.458 498.079 496.623 486.431 448.059 511.451C388.287 542.245 345.639 618.021 283.695 619.347C223.705 620.632 203.924 560.181 181.04 517.17Z"
+            fill="url(#paint1_linear_1_434)"
+            fill-opacity="0.4"
+          />
+          <path
+            opacity="0.5"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M263.622 462.153C257.824 421.037 263.015 377.123 285.481 334.096C306.359 294.111 343.461 260.772 383.944 231.712C422.774 203.839 466.124 187.981 510.858 172.314C568.187 152.238 638.548 103.165 680.579 127.831C723.817 153.204 684.192 223.548 683.699 273.744C683.372 307.111 685.134 337.995 678.182 372.261C669.532 414.897 679.154 465.246 638.344 497.313C597.59 529.335 543.728 502.814 494.522 516.569C433.961 533.499 374.571 598.647 321.005 586.023C269.13 573.798 270.329 509.723 263.622 462.153Z"
+            fill="url(#paint2_linear_1_434)"
+            fill-opacity="0.6"
+          />
+        </g>
+        <defs>
+          <linearGradient
+            id="paint0_linear_1_434"
+            x1="627.318"
+            y1="372.107"
+            x2="130.63"
+            y2="359.782"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#9EE6F7" stop-opacity="0" />
+            <stop offset="1" stop-color="#9EE6F7" stop-opacity="0.46" />
+          </linearGradient>
+          <linearGradient
+            id="paint1_linear_1_434"
+            x1="643.164"
+            y1="375.651"
+            x2="196.765"
+            y2="440.831"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#9EE6F7" stop-opacity="0" />
+            <stop offset="1" stop-color="#9EE6F7" stop-opacity="0.46" />
+          </linearGradient>
+          <linearGradient
+            id="paint2_linear_1_434"
+            x1="702.815"
+            y1="426.507"
+            x2="305.621"
+            y2="358.159"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#005AE2" />
+            <stop offset="1" stop-color="#73E6FF" stop-opacity="0.38" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+
+    <section class="desktop-13">
+      <svg
+        width="668"
+        height="299"
+        viewBox="0 0 668 299"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g opacity="0.5">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M43 192.107C-13.417 169.4 -91.4973 207.114 -122.5 165.197C-151.311 126.244 -160.612 44.6091 -156.682 0.194901C-152.913 -42.405 -129.881 -80.1686 -105.252 -118.689C-73.6885 -168.054 -65.0909 -244.326 6.63529 -255.235C80.4193 -266.456 128.261 -196.084 189.698 -163.545C230.539 -141.915 270.367 -123.208 305.807 -96.7871C349.903 -63.9117 421.468 -37.7091 420.926 8.84397C420.385 55.3315 334.746 72.5759 303.366 112.714C264.745 162.117 286.756 241.729 218.553 267.706C152.499 292.865 108.273 218.379 43 192.107Z"
+            fill="url(#paint0_linear_1_444)"
+            fill-opacity="0.3"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M130 156.975C77.1864 142.346 13.321 143.549 -20.5001 109.883C-51.9311 78.5958 -50.7569 74.6479 -54.5753 35.6263C-58.2382 -1.8013 -44.3437 -36.7734 -29.1826 -72.5491C-9.75197 -118.397 -14.6996 -185.578 45.9617 -201.606C108.364 -218.094 161.481 -161.191 220.268 -138.461C259.346 -123.351 297.068 -110.693 332.225 -90.9206C375.971 -66.3182 442.541 -50.0253 449.657 -9.45126C456.763 31.067 385.023 53.8784 364.249 91.678C338.681 138.202 370.818 205.501 315.679 234.327C262.279 262.243 191.104 173.9 130 156.975Z"
+            fill="url(#paint1_linear_1_444)"
+            fill-opacity="0.4"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M167.5 93.0639C123.721 69.6206 11.8413 73.3034 -8.00005 35.88C-26.4387 1.10235 85.3641 9.05234 95.0001 -27.6575C104.243 -62.8673 80.953 -62.5497 107 -92.69C140.382 -131.316 181.646 -89.3365 243 -92.69C306.114 -96.1401 300.736 -178.991 356.14 -165.456C417.702 -150.417 330.381 -66.3471 356.14 -41.4862C388.191 -10.5521 531.325 -42.0129 524.207 -3.24956C517.098 35.4605 443.239 42.9825 411.333 73.9319C372.062 112.023 379.01 180.15 318.434 196.348C259.769 212.034 218.149 120.188 167.5 93.0639Z"
+            fill="url(#paint2_linear_1_444)"
+            fill-opacity="0.6"
+          />
+        </g>
+        <defs>
+          <linearGradient
+            id="paint0_linear_1_444"
+            x1="396.928"
+            y1="-77.634"
+            x2="140.688"
+            y2="285.345"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#9EE6F7" stop-opacity="0" />
+            <stop offset="1" stop-color="#9EE6F7" stop-opacity="0.46" />
+          </linearGradient>
+          <linearGradient
+            id="paint1_linear_1_444"
+            x1="414.67"
+            y1="-82.5464"
+            x2="238.043"
+            y2="250.013"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#9EE6F7" stop-opacity="0" />
+            <stop offset="1" stop-color="#9EE6F7" stop-opacity="0.46" />
+          </linearGradient>
+          <linearGradient
+            id="paint2_linear_1_444"
+            x1="516.586"
+            y1="-77.2588"
+            x2="255.452"
+            y2="208.884"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#005AE2" />
+            <stop offset="1" stop-color="#73E6FF" stop-opacity="0.38" />
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <h1 class="desktop-13-title">Revolutionizing Link Optimization</h1>
+      <a href="#" class="get-started-btn">Get Started</a>
+      <svg
+        width="579"
+        height="299"
+        viewBox="0 0 579 299"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g opacity="0.7">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M66.5001 329.647C76.7663 282.37 156.045 188.03 198.905 152.427C238.736 119.339 259.063 106.675 316.5 94.9325C371.591 83.6695 457.248 99.0958 514 103.902C586.73 110.063 690.641 74.3523 727.879 121.456C766.186 169.911 692.853 226.712 671.799 280.75C657.803 316.673 647.172 350.924 625.353 384.597C598.203 426.495 588.469 485.616 529.435 500.451C470.484 515.265 420.688 460.404 359.683 451.358C284.599 440.224 191.141 481.798 136.002 442.109C82.602 403.67 54.6225 384.347 66.5001 329.647Z"
+            fill="url(#paint0_linear_1_440)"
+            fill-opacity="0.3"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M178.135 349.119C179.366 307.028 192.737 265.722 224.246 230.825C253.527 198.393 298.799 177.668 346.886 162.214C393.008 147.392 432.814 163.199 483.001 162.214C547.318 160.953 639.588 118.073 679.682 155.687C720.927 194.38 666.348 250.505 656.828 299.465C650.499 332.01 646.827 362.796 633.322 394.095C616.517 433.041 617.68 485.395 568.708 503.685C519.804 521.95 467.513 478.728 412.932 476.409C345.754 473.555 271.173 518.258 216.704 488.729C163.953 460.131 176.711 397.818 178.135 349.119Z"
+            fill="url(#paint1_linear_1_440)"
+            fill-opacity="0.4"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M277.126 342.229C292.454 303.639 318.715 268.061 359.543 241.811C397.485 217.417 446.23 206.831 495.792 201.638C543.329 196.658 588.843 204.353 635.464 212.901C695.211 223.856 780.641 216.076 804.937 258.322C829.93 301.78 760.666 343.262 735.375 386.624C718.564 415.448 704.797 443.151 681.786 469.474C653.153 502.228 636.573 550.734 585.238 558.377C533.973 566.009 500.319 516.292 450.76 503.869C389.764 488.579 305.903 515.758 265.622 478.26C226.612 441.945 259.391 386.876 277.126 342.229Z"
+            fill="url(#paint2_linear_1_440)"
+            fill-opacity="0.6"
+          />
+        </g>
+        <defs>
+          <linearGradient
+            id="paint0_linear_1_440"
+            x1="637.675"
+            y1="444.148"
+            x2="212.299"
+            y2="187.426"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#9EE6F7" stop-opacity="0" />
+            <stop offset="1" stop-color="#9EE6F7" stop-opacity="0.46" />
+          </linearGradient>
+          <linearGradient
+            id="paint1_linear_1_440"
+            x1="649.685"
+            y1="455.075"
+            x2="229.608"
+            y2="290.592"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#9EE6F7" stop-opacity="0" />
+            <stop offset="1" stop-color="#9EE6F7" stop-opacity="0.46" />
+          </linearGradient>
+          <linearGradient
+            id="paint2_linear_1_440"
+            x1="676.316"
+            y1="528.8"
+            x2="365.121"
+            y2="272.69"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#005AE2" />
+            <stop offset="1" stop-color="#73E6FF" stop-opacity="0.38" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </section>
+
+    <footer class="footer">
+      <svg
+        width="508"
+        height="541"
+        viewBox="0 0 508 541"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g opacity="0.8">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M76.21 62.958C123.75 71.9324 220.214 148.611 256.972 190.486C291.132 229.401 304.345 249.375 317.648 306.471C330.408 361.235 317.321 447.28 314.062 504.142C309.886 577.013 348.414 679.912 302.342 718.42C254.948 758.032 196.17 686.275 141.579 666.7C105.289 653.688 70.7602 643.994 36.5056 623.1C-6.11627 597.102 -65.4808 588.983 -81.9188 530.375C-98.3333 471.849 -44.8493 420.576 -37.468 359.348C-28.3839 283.988 -72.4886 191.697 -34.3162 135.498C2.6531 81.0705 21.2074 52.575 76.21 62.958Z"
+            fill="url(#paint0_linear_1_495)"
+            fill-opacity="0.3"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M59.7867 175.082C101.896 175.166 143.55 187.407 179.293 217.953C212.51 246.34 234.462 291.03 251.219 338.678C267.293 384.379 252.576 424.602 254.927 474.743C257.94 539.002 303.318 630.069 266.811 671.173C229.255 713.457 171.664 660.428 122.464 652.245C89.758 646.804 58.8835 643.972 27.2275 631.325C-12.1614 615.588 -64.4639 618.176 -84.0816 569.721C-103.672 521.333 -61.8906 467.883 -61.0591 413.259C-60.0362 346.029 -106.754 272.693 -78.7202 217.44C-51.5701 163.93 11.0671 174.985 59.7867 175.082Z"
+            fill="url(#paint1_linear_1_495)"
+            fill-opacity="0.4"
+          />
+          <path
+            opacity="0.4"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M69.371 273.849C108.365 288.12 144.644 313.402 171.997 353.5C197.416 390.763 209.325 439.201 215.867 488.604C222.141 535.987 215.688 581.694 208.414 628.531C199.09 688.553 209.195 773.74 167.626 799.178C124.865 825.346 81.5112 757.237 37.4765 733.137C8.20472 717.117 -19.8625 704.11 -46.8031 681.825C-80.325 654.095 -129.264 638.843 -138.303 587.735C-147.329 536.697 -98.5467 501.701 -87.4787 451.822C-73.8563 390.432 -103.309 307.342 -66.9225 266.054C-31.6835 226.07 24.2572 257.336 69.371 273.849Z"
+            fill="url(#paint2_linear_1_495)"
+            fill-opacity="0.6"
+          />
+        </g>
+        <defs>
+          <linearGradient
+            id="paint0_linear_1_495"
+            x1="-22.6874"
+            y1="637.041"
+            x2="222.351"
+            y2="204.828"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#9EE6F7" stop-opacity="0" />
+            <stop offset="1" stop-color="#9EE6F7" stop-opacity="0.46" />
+          </linearGradient>
+          <linearGradient
+            id="paint1_linear_1_495"
+            x1="-33.2834"
+            y1="649.344"
+            x2="119.695"
+            y2="224.941"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#9EE6F7" stop-opacity="0" />
+            <stop offset="1" stop-color="#9EE6F7" stop-opacity="0.46" />
+          </linearGradient>
+          <linearGradient
+            id="paint2_linear_1_495"
+            x1="-106.255"
+            y1="677.973"
+            x2="141.281"
+            y2="359.916"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#005AE2" />
+            <stop offset="1" stop-color="#73E6FF" stop-opacity="0.38" />
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <img
+              src="./assets/Logo (2).png"
+              alt="SCISSOR"
+              style="width: 120px"
+            />
+          </div>
+          <div class="social-icons">
+            <a href="#" class="social-icon"
+              ><img src="./assets/i.fi-social-twitter.png" alt=""
+            /></a>
+            <a href="#" class="social-icon"
+              ><img src="./assets/svg.feather.png" alt=""
+            /></a>
+            <a href="#" class="social-icon"
+              ><img src="./assets/i.fi-social-linkedin.png" alt=""
+            /></a>
+            <a href="#" class="social-icon"
+              ><img src="./assets/i.fi-social-facebook.png" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Why Scissor?</h3>
+          <ul class="footer-links">
+            <li><a href="#">Scissor 101</a></li>
+            <li><a href="#">Integrations & API</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Solutions</h3>
+          <ul class="footer-links">
+            <li><a href="#">Social Media</a></li>
+            <li><a href="#">Digital Marketing</a></li>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">For Developers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Products</h3>
+          <ul class="footer-links">
+            <li><a href="#">Link Management</a></li>
+            <li><a href="#">QR Codes</a></li>
+            <li><a href="#">Link-in-bio</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul class="footer-links">
+            <li><a href="#">About Scissor</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column" style="grid-area: 2 / 2">
+          <h3>Resources</h3>
+          <ul class="footer-links">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Resource Library</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">App Connectors</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Trust Center</a></li>
+            <li><a href="#">Browser Extension</a></li>
+            <li><a href="#">Mobile App</a></li>
+          </ul>
+        </div>
+        <div class="footer-column" style="grid-area: 2 / 3">
+          <h3>Features</h3>
+          <ul class="footer-links">
+            <li><a href="#">Branded Links</a></li>
+            <li><a href="#">Mobile Links</a></li>
+            <li><a href="#">Campaign</a></li>
+            <li>
+              <a href="#"
+                >Management & <br />
+                Analytics</a
+              >
+            </li>
+            <li><a href="#">QR Code Generation</a></li>
+          </ul>
+        </div>
+        <div class="footer-column" style="grid-area: 2 / 4">
+          <h3>Legal</h3>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Acceptable Use Policy</a></li>
+            <li><a href="#">Code of Conduct</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>Term of Service | Security | Scissor 2023</span>
+      </div>
+      <svg
+        width="543"
+        height="358"
+        viewBox="0 0 543 358"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g opacity="0.7">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M74.4161 555.549C59.9173 509.393 82.0605 388.172 101.659 336.012C119.873 287.541 131.258 266.471 175.338 227.821C217.618 190.749 299.67 161.723 351.352 137.789C417.586 107.116 490.166 24.6264 545.847 47.1018C603.125 70.2218 567.554 155.888 576.029 213.26C581.664 251.399 589.393 286.419 587.117 326.479C584.285 376.323 605.112 432.504 561.176 474.632C517.302 516.7 446.87 493.706 389.393 516.064C318.652 543.582 258.055 625.989 190.497 618.821C125.068 611.878 91.1911 608.95 74.4161 555.549Z"
+            fill="url(#paint0_linear_1_491)"
+            fill-opacity="0.3"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M181.04 517.17C161.261 479.995 152.418 437.489 162.504 391.567C171.878 348.89 200.941 308.462 235.06 271.219C267.785 235.498 310.195 229.513 353.306 203.8C408.555 170.847 467.471 87.8944 520.932 100.711C575.928 113.895 556.314 189.685 572.294 236.933C582.915 268.34 594.974 296.903 598.745 330.783C603.437 372.939 630.378 417.844 596.895 457.989C563.458 498.079 496.623 486.432 448.059 511.451C388.287 542.246 345.639 618.021 283.695 619.348C223.705 620.632 203.924 560.181 181.04 517.17Z"
+            fill="url(#paint1_linear_1_491)"
+            fill-opacity="0.4"
+          />
+          <path
+            opacity="0.5"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M263.622 462.153C257.824 421.037 263.015 377.123 285.481 334.097C306.359 294.112 343.461 260.772 383.944 231.712C422.774 203.84 466.124 187.981 510.858 172.315C568.187 152.239 638.548 103.166 680.579 127.832C723.817 153.204 684.193 223.548 683.699 273.744C683.372 307.111 685.134 337.996 678.182 372.261C669.532 414.897 679.154 465.247 638.344 497.313C597.59 529.335 543.729 502.814 494.522 516.57C433.961 533.499 374.571 598.647 321.005 586.024C269.13 573.798 270.329 509.724 263.622 462.153Z"
+            fill="url(#paint2_linear_1_491)"
+            fill-opacity="0.6"
+          />
+        </g>
+        <defs>
+          <linearGradient
+            id="paint0_linear_1_491"
+            x1="627.318"
+            y1="372.108"
+            x2="130.63"
+            y2="359.783"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#9EE6F7" stop-opacity="0" />
+            <stop offset="1" stop-color="#9EE6F7" stop-opacity="0.46" />
+          </linearGradient>
+          <linearGradient
+            id="paint1_linear_1_491"
+            x1="643.164"
+            y1="375.652"
+            x2="196.766"
+            y2="440.831"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#9EE6F7" stop-opacity="0" />
+            <stop offset="1" stop-color="#9EE6F7" stop-opacity="0.46" />
+          </linearGradient>
+          <linearGradient
+            id="paint2_linear_1_491"
+            x1="702.815"
+            y1="426.507"
+            x2="305.621"
+            y2="358.159"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#005AE2" />
+            <stop offset="1" stop-color="#73E6FF" stop-opacity="0.38" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </footer>
   </body>
 </html>
