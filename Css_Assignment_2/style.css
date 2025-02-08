@@ -1,0 +1,168 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Top Section */
+.top-section {
+  background-color: white;
+  padding: 40px;
+  width: 65%;
+}
+
+.top-section h1 {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 38.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.top-section p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  color: #333;
+}
+
+.highlight {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  color: green;
+  font-weight: bold;
+}
+
+/* Container */
+.container {
+  min-height: 400px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #666666;
+  border-top: 8px solid rgba(153, 153, 153, 1);
+}
+
+.card {
+  background-color: white;
+  border-bottom: 8px solid rgba(153, 153, 153, 1);
+  padding: 20px;
+  padding-top: 50px; /* Extra space for the heading */
+  width: 60%;
+  position: relative;
+  min-height: 200px; /* Ensures a minimum height */
+}
+
+.card-heading {
+  background-color: #f1c40f;
+  border-bottom: 8px solid rgba(204, 153, 0, 1);
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 28.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  /* font-weight: bold; */
+  padding: 10px 20px;
+  display: inline-block;
+  position: absolute;
+  top: 15px; /* Slight overlap */
+  left: -10px; /* Moves it slightly left */
+}
+
+/* Card Body */
+.card-body {
+  padding: 40px 20px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  /* font-size: 1em;
+        color: #333;
+        line-height: 1.6; */
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 768px) {
+  .top-section {
+    width: 80%;
+    padding: 30px;
+  }
+
+  .top-section h1 {
+    font-size: 1.8em;
+  }
+
+  .top-section p {
+    font-size: 1.1em;
+  }
+
+  .card {
+    width: 80%;
+    padding: 15px;
+    padding-top: 45px;
+  }
+
+  .card-body {
+    padding: 35px 15px 15px;
+  }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 480px) {
+  .top-section {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .top-section h1 {
+    font-size: 1.5em;
+  }
+
+  .top-section p {
+    font-size: 1em;
+  }
+
+  .card {
+    width: 95%;
+    padding: 10px;
+    padding-top: 40px;
+  }
+
+  .card-heading {
+    font-size: 0.9em;
+    padding: 8px 15px;
+  }
+
+  .card-body {
+    padding: 30px 10px 10px;
+    font-size: 0.9em;
+  }
+}
